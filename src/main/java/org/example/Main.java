@@ -45,15 +45,15 @@ public class Main {
 
 
             Factura factura1 = Factura.builder().
-                    fecha("23/02/2019").
+                    fecha("01/02/2024").
                     numero(1).
-                    total(34).
+                    total(55).
                     build();
 
             Factura factura2 = Factura.builder().
-                    fecha("22/06/2019").
+                    fecha("02/08/2023").
                     numero(2).
-                    total(354).
+                    total(456).
                     build();
 
             List<Factura> facturas = new ArrayList<Factura>();
@@ -61,14 +61,14 @@ public class Main {
             facturas.add(factura2);
 
             Domicilio domicilio1 = Domicilio.builder().
-                    nombreCalle("Belgrano").
-                    numero(388).
+                    nombreCalle("lujan").
+                    numero(344).
                     build();
 
             Cliente cliente1 = Cliente.builder().
-                    nombre("Eustaquio").
-                    apellido("Martinez").
-                    dni(38944924).
+                    nombre("juan").
+                    apellido("rodri").
+                    dni(45324211).
                     build();
 
             factura1.setCliente(cliente1);
@@ -77,13 +77,13 @@ public class Main {
             cliente1.setFacturas(facturas);
 
             DetalleFactura detalle1 = DetalleFactura.builder().
-                    cantidad(34).
-                    subtotal(12).
+                    cantidad(56).
+                    subtotal(43).
                     build();
 
             DetalleFactura detalle2 = DetalleFactura.builder().
-                    cantidad(45).
-                    subtotal(93).
+                    cantidad(88).
+                    subtotal(91).
                     build();
 
             List<DetalleFactura> detalles = new ArrayList<DetalleFactura>();
