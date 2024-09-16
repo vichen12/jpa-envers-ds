@@ -1,0 +1,5 @@
+Ejecutar el proyecto desde el archivo main tal como está actualmente. Esto permitirá la creación de las tablas y la inserción de registros en ellas. Luego, se pueden visualizar los registros utilizando la consola H2.
+
+Para verificar el funcionamiento de la auditoría, debes comentar las partes del código que crean los registros en el archivo main y descomentar la sección que actualiza una factura (esto ya está indicado en el código). Además, es necesario modificar el archivo persistence.xml, cambiando el valor a "update" para que actualice la base de datos sin recrear las tablas. De esta manera, podrás comprobar la auditoría en la tabla correspondiente a las facturas.
+
+Por último, para probar la auditoría al eliminar un registro (en este caso, una factura), debes comentar las secciones anteriores y descomentar la parte del código que realiza la eliminación. Nuevamente, los cambios en la tabla de auditoría de la factura se podrán observar después de esta operación.
